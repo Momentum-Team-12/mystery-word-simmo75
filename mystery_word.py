@@ -8,7 +8,7 @@ def play_game():
         contents_string = file_contents.read()
         contents_list = contents_string.split()
         random_word = random.choice(contents_list)
-        # print(random_word)
+        print(random_word)
         print(f'I am thinking of a word. It has {len(random_word)} letters...')
 
         guesses = ' '
@@ -22,8 +22,7 @@ def play_game():
                     print(letter, end=" ")
 
                 else:
-                    print("_")
-                    # print(letter, end=" ")
+                    print("_", end=" ")
                     failed += 1
 
             if failed == 0:
