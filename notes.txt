@@ -1,0 +1,15 @@
+# # MVP
+# computer read file
+# start with test_word.txt (one word)
+# tell user how many letters word has
+# Ask user to guess one letter
+# Tell the user if the guess is in the word
+# Display partially guessed word like in Wheel of Fortune
+# game ends when player guesses word
+# 2.0
+# design the word selection after the game logic
+# computer chooses random word
+# validate guess - make sure is only one letter
+# limit user to 8 guesses, game ends if user runs out of guesses
+# user guesses same letter twice, do not take away a guess
+# print message that they can guess again
