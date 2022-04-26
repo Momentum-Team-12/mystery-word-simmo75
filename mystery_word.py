@@ -3,13 +3,13 @@ import random
 
 def play_game():
     # computer reads file
-    with open('test-word.txt') as file_contents:
+    with open('words.txt') as file_contents:
         # reads the contents
         contents_string = file_contents.read()
         contents_list = contents_string.split()
         random_word = random.choice(contents_list)
-        print(random_word)
-        print(f'I am thinking of a word. It has {len(random_word)}letters...')
+        # print(random_word)
+        print(f'I am thinking of a word. It has {len(random_word)} letters...')
 
         guesses = ' '
         turns = 8
@@ -23,13 +23,13 @@ def play_game():
 
                 else:
                     print("_")
-                    print(letter, end=" ")
+                    # print(letter, end=" ")
                     failed += 1
 
             if failed == 0:
-                print("You Win")  
-                print("The word is: ", random_word) 
-                break   
+                print("The word is: ", random_word)
+                print("You Win")
+                break
 
             print()
             guess = input("Guess a letter:")
@@ -41,7 +41,7 @@ def play_game():
                 print("You have", + turns, 'more guesses')
 
                 if turns == 0:
-                    print("You Lose")
+                    print("You Lose, the word is: ", random_word)
 
 
 if __name__ == "__main__":
