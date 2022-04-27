@@ -1,7 +1,7 @@
 import random
 
 
-def get_list(): 
+def get_list():
     EASY_WORDS = []
     MEDIUM_WORDS = []
     DIFFICULT_WORDS = []
@@ -18,13 +18,13 @@ def get_list():
             MEDIUM_WORDS.append(word)
         elif 9 <= len(word):
             DIFFICULT_WORDS.append(word)
-    level = input("Choose your difficuly level: E, M, D : ").upper()   
-    if level == "E": 
+    level = input("Choose your difficuly level: E, M, D : ").upper()
+    if level == "E":
         return EASY_WORDS
     elif level == "M":
         return MEDIUM_WORDS
     elif level == "D":
-        return DIFFICULT_WORDS    
+        return DIFFICULT_WORDS
 
 
 def play_again():
